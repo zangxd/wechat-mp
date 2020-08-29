@@ -1,0 +1,5 @@
+/node_modules
+/miniprogram_npm
+*.bak
+yarn-error.log
+**/**/.DS_Store

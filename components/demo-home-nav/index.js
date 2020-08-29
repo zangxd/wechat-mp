@@ -1,0 +1,14 @@
+"use strict";
+Component({
+    properties: {
+        group: Object
+    },
+    methods: {
+        onClick: function (event) {
+            wx.navigateTo({
+                url: event.target.dataset.url
+            });
+        }
+    }
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsU0FBUyxDQUFDO0lBQ1IsVUFBVSxFQUFFO1FBQ1YsS0FBSyxFQUFFLE1BQU07S0FDZDtJQUVELE9BQU8sRUFBRTtRQUNQLE9BQU8sWUFBQyxLQUFLO1lBQ1gsRUFBRSxDQUFDLFVBQVUsQ0FBQztnQkFDWixHQUFHLEVBQUUsS0FBSyxDQUFDLE1BQU0sQ0FBQyxPQUFPLENBQUMsR0FBRzthQUM5QixDQUFDLENBQUM7UUFDTCxDQUFDO0tBQ0Y7Q0FDRixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJDb21wb25lbnQoe1xuICBwcm9wZXJ0aWVzOiB7XG4gICAgZ3JvdXA6IE9iamVjdFxuICB9LFxuXG4gIG1ldGhvZHM6IHtcbiAgICBvbkNsaWNrKGV2ZW50KSB7XG4gICAgICB3eC5uYXZpZ2F0ZVRvKHtcbiAgICAgICAgdXJsOiBldmVudC50YXJnZXQuZGF0YXNldC51cmxcbiAgICAgIH0pO1xuICAgIH1cbiAgfVxufSk7XG4iXX0=
