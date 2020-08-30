@@ -6,7 +6,10 @@
     "pages/syntax/data-binding/index",
     "pages/syntax/list-rendering/index",
     "pages/syntax/cond-rendering/index",
-    "pages/syntax/template/index"
+    "pages/syntax/template/index",
+    "pages/scene/goods/index",
+    "pages/scene/user/index",
+    "pages/scene/cart/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

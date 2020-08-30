@@ -12,7 +12,10 @@
   <view class="syntax">
     <van-button type="primary" bind:click="showSyntax">{{syntax}}</van-button>
   </view>
-  <view class="scene">
-    <van-button type="primary" bind:click="showScene">{{scene}}</van-button>
-  </view>
+  <view class="scene"></view>
+  <h-stack alignX="center" alignY="center" spacing="xs">
+    <view><van-button type="primary" bind:click="showCart">购物车</van-button></view>
+    <view><van-button type="primary" bind:click="showGoods">商品</van-button></view>
+    <view><van-button type="primary" bind:click="showUser">用户</van-button></view>
+  </h-stack>
 </view>

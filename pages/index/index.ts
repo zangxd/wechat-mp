@@ -1,10 +1,11 @@
 // index.ts
 // 获取应用实例
-const app = getApp<IAppOption>()
+const app = getApp<IAppOption>();
 
 Page({
   data: {
     motto: "Hello World",
+    syntax: "看下语法",
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse("button.open-type.getUserInfo"),
@@ -15,9 +16,24 @@ Page({
       url: "../logs/logs",
     });
   },
-  showSyntax () {
+  showSyntax() {
     wx.navigateTo({
       url: "../syntax/dashboard/index",
+    });
+  },
+  showCart() {
+    wx.navigateTo({
+      url: "../scene/cart/index",
+    });
+  },
+  showGoods() {
+    wx.navigateTo({
+      url: "../scene/goods/index",
+    });
+  },
+  showUser() {
+    wx.navigateTo({
+      url: "../scene/user/index",
     });
   },
   onLoad() {

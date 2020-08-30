@@ -14,13 +14,16 @@ import {
 } from "../common/stack";
 
 Component({
+  options: {
+    multipleSlots: true,
+  },
   properties: {
     alignX: {
       type: String,
       value: "left",
-      observer(v: AlignX) {
+      observer: function (v: AlignX) {
         if (v) {
-          const style = `${this.data.baseStyle} justify-content: ${horizontal[v]};`;
+          const style = `${this.data.baseStyle} align-items: ${horizontal[v]};`;
           this.setData({ baseStyle: style });
         }
       },
@@ -30,7 +33,7 @@ Component({
       value: "center",
       observer(v: AlignY) {
         if (v) {
-          const style = `${this.data.baseStyle} align-items: ${vertical[v]};`;
+          const style = `${this.data.baseStyle} justify-content: ${vertical[v]};`;
           this.setData({ baseStyle: style });
         }
       },
@@ -52,7 +55,7 @@ Component({
       },
     },
     spacing: {
-      type: null,
+      type: String,
       observer(spacing: Spacing) {
         if (spacing) {
           let className = `${this.data.className} ${this.data.className}--spacing__${spacing}`;
@@ -61,7 +64,7 @@ Component({
       },
     },
     border: {
-      type: null,
+      type: Object,
       observer(border: Border) {
         if (border) {
           let style = `${this.data.baseStyle} ${getBorder(border)}`;
@@ -70,7 +73,7 @@ Component({
       },
     },
     shadow: {
-      type: null,
+      type: Object,
       observer(shadow: Shadow) {
         if (shadow) {
           let style = `${this.data.baseStyle} ${getShadow(shadow)}`;
@@ -81,7 +84,7 @@ Component({
   },
   data: {
     baseStyle: "",
-    className: `mul-hstack`,
+    className: `mul-vstack`,
   },
   methods: {},
 });

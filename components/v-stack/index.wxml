@@ -1,9 +1,3 @@
-<view class="demo-home">
-  <view
-    wx:for="{{ list }}"
-    wx:for-item="group"
-    wx:key="index"
-  >
-    <demo-home-nav group="{{ group }}" />
-  </view>
+<view class="{{ className }}" style="{{ baseStyle }}">
+  <slot />
 </view>
