@@ -1,3 +1,6 @@
 {
-    "usingComponents": {}
+    "usingComponents": {
+        "van-divider": "@vant/weapp/divider/index",
+        "h-stack": "../../../components/h-stack/index"
+    }
 }

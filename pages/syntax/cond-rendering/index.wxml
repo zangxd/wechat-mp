@@ -1,0 +1,11 @@
+<view class="demo-code">
+    <h-stack alignX="center">
+        <view wx:if="{{condition}}">True</view>
+    </h-stack>
+    <van-divider contentPosition="center">分割线</van-divider>
+    <h-stack alignX="center">
+        <view wx:if="{{length > 5}}">1</view>
+        <view wx:elif="{{length > 2}}">2</view>
+        <view wx:else>3</view>
+    </h-stack>
+</view>

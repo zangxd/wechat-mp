@@ -1,0 +1,13 @@
+<view class="demo-code">
+    <h-stack alignX="center">
+        <view>{{ message }}</view>
+    </h-stack>
+    <van-divider contentPosition="center">分割线</van-divider>
+    <h-stack alignX="center">
+        <view id="item-{{id}}">加在ID上了</view>
+    </h-stack>
+    <van-divider contentPosition="center">分割线</van-divider>
+    <h-stack alignX="center">
+        <view wx:for="{{[0, 1, 2, 3, 4]}}">{{item}}</view>
+    </h-stack>
+</view>

@@ -1,0 +1,29 @@
+<view class="demo-code">
+    <h-stack alignX="center">
+        <view>
+            <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;">
+                {{item.id}}
+            </switch>
+        </view>
+    </h-stack>
+    <van-divider contentPosition="center">分割线</van-divider>
+    <h-stack alignX="center">
+        <view>
+            <button bindtap="switch">Switch</button>
+            <button bindtap="addToFront">Add to the front</button>
+        </view>
+    </h-stack>
+    <van-divider contentPosition="center">分割线</van-divider>
+    <h-stack alignX="center">
+        <view>
+            <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;">
+                {{item}}
+            </switch>
+        </view>
+    </h-stack>
+    <h-stack alignX="center">
+        <view>
+            <button bindtap="addNumberToFront">Add to the front</button>
+        </view>
+    </h-stack>
+</view>
